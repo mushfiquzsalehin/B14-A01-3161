@@ -7,6 +7,8 @@
 }
 img {
     max-width: 100%;
+    height: auto;
+    display: block;
 }
 /* common style */
 .common-button {
@@ -21,8 +23,9 @@ img {
 }
 
 .container {
-    /* max-width: 1200px; */
-    margin: auto;
+    /* max-width: 1200px;
+    width: 90%; */
+    margin: 0 auto;
 }
 
 header{
@@ -48,6 +51,7 @@ nav{
     gap: 24px;
     align-items: center;
     padding-top: 12px;
+    text-decoration: none;
 }
 
 .nav-menu ul li a{
@@ -62,6 +66,7 @@ nav{
     text-align:right;
     padding-right: 20px;
 }
+
 /* Hero Section CSS */
 
 .hero-parent-root{
@@ -102,61 +107,196 @@ nav{
 
 .hero-content .common-button{
     margin-top: 220px;
-    padding: 18px 42px;
-    font-size: 18px;
 }
 /* Meet the Speakers Section */
 
 .speaker-parent{
-    
-    margin-top: 90px;
-    margin-bottom: 90px;
-    height: 1279px;
-    width: 1440px;
+    margin-top: 100px;
 }
 
 .speaker-heading{
     text-align: center;
-    font-size: 52px;
+    margin-bottom: 0px;
+}
+
+.speaker-heading h2{
+    font-size: 56px;
     font-weight: 700;
-    margin-bottom: 60px;
+    color: #111827;
 }
 
 .speaker-card-parent{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    padding: 60px;
 }
 
 .speaker-card{
     border: 1px solid #E5E7EB;
     border-radius: 8px;
     overflow: hidden;
-    background: #ffffff;
 }
 
 .speaker-card img{
     width: 100%;
-    height: 280px;
+    height: 270px;
     object-fit: cover;
+    display: block;
 }
 
-.speaker-info{
-    padding: 18px;
+.speaker-content{
+    padding: 60px;
 }
 
-.speaker-info h5{
+.speaker-content h5{
     color: #2563EB;
     font-size: 12px;
+    font-weight: 700;
     margin-bottom: 8px;
 }
 
-.speaker-info h3{
-    font-size: 24px;
+.speaker-content h3{
+    font-size: 28px;
     margin-bottom: 8px;
+    color: #111827;
 }
 
-.speaker-info p{
-    color: #6B7280;
+.speaker-content p{
     font-size: 15px;
+    color: #6B7280;
+}
+
+/* Pricing Section */
+
+.pricing-parent{
+    padding: 60px;
+}
+
+.pricing-heading{
+    text-align: center;
+}
+
+.pricing-heading h2{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.pricing-heading p{
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.pricing-card-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.pricing-card{
+    width: 32%;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.pricing-card h5{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.pricing-card h1{
+    font-size: 50px;
+}
+
+.price-text{
+    color: gray;
+    margin: 10px 0 20px;
+}
+
+.pricing-card hr{
+    margin-bottom: 20px;
+}
+
+.pricing-card ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.pricing-card ul li{
+    margin-bottom: 12px;
+    color: #4B5563;
+}
+
+.pricing-btn {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #1D4ED8;
+    border: solid;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pro-button{
+    width: 100%;
+}
+
+.active-card{
+    background: #0F172A;
+    color: white;
+}
+
+.active-card ul li,
+.active-card .price-text,
+.active-card h5{
+    color: #D1D5DB;
+}
+
+/* Sponsor Section */
+
+.sponsor-parent{
+    padding: 100px 0;
+    background-color: #F8FAFC;
+}
+
+.sponsor-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsor-heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.sponsor-heading p{
+    font-size: 18px;
+    color: #6B7280;
+}
+
+.sponsor-card-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 60px;
+}
+
+.sponsor-card{
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-card img{
+    width: 130px;
 }
