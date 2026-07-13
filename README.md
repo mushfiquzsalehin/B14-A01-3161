@@ -1,0 +1,1 @@
+now think and suggest me what can i include the "something missing " section, i think it can be sponsor, write the code according to my previous code structure.
